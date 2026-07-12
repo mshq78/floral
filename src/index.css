@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-floral-dark: #4b0000;
+  --color-floral-gold: #c5a059;
+  --color-floral-light: #f4e9d8;
+  --color-floral-bg: #230000;
+  --color-floral-accent: #8b0000;
+  --font-sans: "Vazirmatn", sans-serif;
+  --font-serif: "Georgia", serif;
+}
+
+/* Base Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--color-floral-bg);
+    overscroll-behavior: none;
+}
+
+.snap-container {
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    overscroll-behavior-y: none;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.snap-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    min-height: 100vh;
+    min-height: 100dvh;
+    width: 100vw;
+    scroll-snap-align: start;
+    scroll-snap-stop: always; /* Crucial for preventing over-scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-panel {
+    background: rgba(26, 26, 26, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #f4e9d8 0%, #c5a059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-justify-custom {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8;
+}
+
+/* Hide scrollbar for horizontal lists */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
