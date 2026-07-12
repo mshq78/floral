@@ -197,34 +197,7 @@ export default function App() {
           <SwipeIndicator />
         </section>
 
-        {/* Slide 5: Social Proof / Testimonials */}
-        <section className="slide relative px-0">
-          <motion.div 
-            initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.3 }} variants={stagger}
-            className="w-full max-w-md mx-auto flex flex-col h-full justify-center"
-          >
-            <motion.div variants={fadeUp} className="text-center mb-8 shrink-0 px-6">
-              <h2 className="text-3xl font-bold text-gradient mb-3">صدای مشتریان</h2>
-              <div className="w-12 h-[2px] bg-floral-gold mx-auto"></div>
-            </motion.div>
-
-            <motion.div variants={fadeUp} className="relative w-full overflow-hidden" dir="ltr">
-              <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 w-full pb-8 pt-4 px-8 items-center no-scrollbar">
-                {TESTIMONIALS.map((src, idx) => (
-                  <div key={idx} className="snap-center shrink-0 w-[75%] aspect-[9/16] flex justify-center items-center rounded-2xl relative shadow-2xl shadow-black/50">
-                    <img src={src} alt={`Review ${idx + 1}`} className="w-full h-full object-cover rounded-2xl border border-floral-light/10" loading="lazy" referrerPolicy="no-referrer" />
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-            
-            <motion.div variants={fadeUp} className="text-center shrink-0 mt-2 px-6">
-              <p className="text-xs text-floral-light/50">به چپ و راست بکشید</p>
-            </motion.div>
-          </motion.div>
-        </section>
-
-        {/* Slide 6: Hero Product */}
+        {/* Slide 5: Hero Product */}
         <section className="slide relative px-6">
           <div className="absolute inset-0 z-0 opacity-20">
              <img src={IMAGES.product} className="w-full h-full object-cover" alt="Background" />
@@ -272,6 +245,33 @@ export default function App() {
             </motion.div>
           </motion.div>
           <SwipeIndicator />
+        </section>
+
+        {/* Slide 6: Social Proof / Testimonials */}
+        <section className="slide relative px-0">
+          <motion.div 
+            initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.3 }} variants={stagger}
+            className="w-full max-w-md mx-auto flex flex-col h-full justify-center"
+          >
+            <motion.div variants={fadeUp} className="text-center mb-8 shrink-0 px-6">
+              <h2 className="text-3xl font-bold text-gradient mb-3">صدای مشتریان</h2>
+              <div className="w-12 h-[2px] bg-floral-gold mx-auto"></div>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="relative w-full overflow-hidden" dir="ltr">
+              <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 w-full pb-8 pt-4 px-8 items-center no-scrollbar">
+                {TESTIMONIALS.map((src, idx) => (
+                  <div key={idx} className="snap-center shrink-0 w-[75%] aspect-[9/16] flex justify-center items-center rounded-2xl relative shadow-2xl shadow-black/50">
+                    <img src={src} alt={`Review ${idx + 1}`} className="w-full h-full object-cover rounded-2xl border border-floral-light/10" loading="lazy" referrerPolicy="no-referrer" />
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+            
+            <motion.div variants={fadeUp} className="text-center shrink-0 mt-2 px-6">
+              <p className="text-xs text-floral-light/50">به چپ و راست بکشید</p>
+            </motion.div>
+          </motion.div>
         </section>
 
         {/* Slide 7: Financials */}
