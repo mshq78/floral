@@ -57,9 +57,8 @@ export default function App() {
         
         {/* Slide 1: Hero */}
         <section className="slide relative">
-          <div className="absolute inset-0 z-0">
-            <img src={IMAGES.heroBg} className="w-full h-full object-cover opacity-30" alt="Background" />
-            <div className="absolute inset-0 bg-gradient-to-t from-floral-bg via-floral-bg/80 to-transparent"></div>
+          <div className="absolute inset-0 z-0 bg-gradient-to-br from-floral-dark to-floral-bg">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-floral-gold/10 via-transparent to-transparent"></div>
           </div>
           
           <motion.div 
