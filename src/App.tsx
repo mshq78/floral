@@ -65,7 +65,7 @@ export default function App() {
             initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.3 }} variants={stagger}
             className="relative z-10 flex flex-col items-center justify-center w-full max-w-md mx-auto text-center px-6"
           >
-            <motion.div variants={fadeUp} className="w-32 h-32 mb-6 flex items-center justify-center drop-shadow-2xl">
+            <motion.div variants={fadeUp} className="w-48 h-48 mb-6 flex items-center justify-center drop-shadow-2xl">
               <img src={IMAGES.logo} alt="Floral Logo" className="w-full h-full object-contain" referrerPolicy="no-referrer" />
             </motion.div>
 
@@ -289,11 +289,11 @@ export default function App() {
               <motion.div variants={fadeUp} className="glass-panel p-6 rounded-2xl">
                 <div className="flex justify-between items-end mb-4">
                   <span className="font-bold text-sm text-floral-light/80">تولید فعلی (کارگاهی)</span>
-                  <span className="text-2xl font-light text-white">۱۵۰٪</span>
+                  <span className="text-2xl font-light text-white">۱۰۰٪</span>
                 </div>
                 <div className="w-full bg-black/50 rounded-full h-3 overflow-hidden">
                   <motion.div 
-                    initial={{ width: 0 }} whileInView={{ width: '60%' }} transition={{ duration: 1, delay: 0.5 }}
+                    initial={{ width: 0 }} whileInView={{ width: '50%' }} transition={{ duration: 1, delay: 0.5 }}
                     className="bg-floral-light/40 h-full rounded-full"
                   ></motion.div>
                 </div>
@@ -420,10 +420,6 @@ export default function App() {
                   <span className="font-bold text-sm text-white" dir="ltr">@floraliran</span>
                 </div>
               </div>
-            </motion.div>
-            
-            <motion.div variants={fadeUp} className="mt-8 text-center">
-              <p className="text-[10px] text-floral-light/30 font-light tracking-widest">نمایشگاه بین‌المللی ایران بیوتی</p>
             </motion.div>
           </motion.div>
         </section>
