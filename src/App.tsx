@@ -400,25 +400,41 @@ export default function App() {
               <a href="tel:09332511889" className="w-full flex items-center justify-between px-5 bg-floral-gold text-floral-dark py-4 rounded-xl font-bold text-sm shadow-[0_4px_20px_rgba(197,160,89,0.3)] transition-transform active:scale-95">
                 <span className="flex items-center">
                   <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                  تماس مستقیم
+                  تماس مستقیم تلفنی
                 </span>
                 <span dir="ltr" className="tracking-widest">0933 251 1889</span>
               </a>
               
-              <a href="https://wa.me/989332511889?text=سلام،%20من%20از%20نمایشگاه%20ایران%20بیوتی%20کاتالوگ%20شما%20را%20دیدم%20و%20در%20خصوص%20همکاری%20تجاری%20با%20برند%20فلورال%20پیام%20می‌دهم." target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center px-5 bg-[#25D366] text-white py-4 rounded-xl font-bold text-sm shadow-[0_4px_20px_rgba(37,211,102,0.2)] transition-transform active:scale-95">
-                <svg className="w-5 h-5 ml-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"></path></svg>
-                پیام در واتساپ
+              <a href="sms:09332511889?body=سلام،%20من%20در%20خصوص%20همکاری%20تجاری%20با%20برند%20فلورال%20پیام%20می‌دهم." className="w-full flex items-center justify-between px-5 bg-white/10 hover:bg-white/15 text-white py-4 rounded-xl font-bold text-sm border border-white/10 transition-transform active:scale-95">
+                <span className="flex items-center">
+                  <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                  ارسال پیامک مستقیم (آفلاین و سریع)
+                </span>
+                <span className="text-xs font-normal text-floral-gold">پیشنهادی</span>
               </a>
 
-              <div className="flex gap-3 mt-4">
-                <a href="https://instagram.com/floraliran" target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center glass-panel py-4 rounded-xl transition-transform active:scale-95 border-none">
-                  <span className="text-[10px] text-floral-light/50 mb-1">اینستاگرام</span>
+              <div className="grid grid-cols-2 gap-3">
+                <a href="https://eitaa.com/floraliran" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center glass-panel py-4 rounded-xl transition-transform active:scale-95 border-none bg-orange-600/10 hover:bg-orange-600/20 animate-fade-in">
+                  <span className="text-[10px] text-orange-400 mb-1 font-bold">پیام در ایتا (بدون فیلترشکن)</span>
                   <span className="font-bold text-sm text-white" dir="ltr">@floraliran</span>
                 </a>
-                <div className="flex-1 flex flex-col items-center justify-center glass-panel py-4 rounded-xl border-none">
-                  <span className="text-[10px] text-floral-light/50 mb-1">تلگرام و ایتا</span>
+                
+                <a href="https://wa.me/989332511889?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D9%85%D9%86%20%D8%AF%D8%B1%20%DD%AE%D8%B5%D9%88%D8%B5%20%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C%20%D8%AA%D8%AC%D8%A7%D8%B1%DB%8C%20%D8%A8%D8%A7%20%D8%A8%D8%B1%D9%86%D8%AF%20%D9%81%D9%84%D9%88%D8%B1%D8%A7%D9%84%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%87%D9%85." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center glass-panel py-4 rounded-xl transition-transform active:scale-95 border-none bg-green-600/10 hover:bg-green-600/20">
+                  <span className="text-[10px] text-green-400 mb-1 font-bold">واتساپ (نیاز به VPN)</span>
+                  <span className="font-bold text-sm text-white" dir="ltr">0933 251 1889</span>
+                </a>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3">
+                <a href="https://t.me/floraliran" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center glass-panel py-4 rounded-xl transition-transform active:scale-95 border-none bg-sky-600/10 hover:bg-sky-600/20">
+                  <span className="text-[10px] text-sky-400 mb-1 font-bold">پیام در تلگرام (نیاز به VPN)</span>
                   <span className="font-bold text-sm text-white" dir="ltr">@floraliran</span>
-                </div>
+                </a>
+
+                <a href="https://instagram.com/floraliran" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center glass-panel py-4 rounded-xl transition-transform active:scale-95 border-none bg-pink-600/10 hover:bg-pink-600/20">
+                  <span className="text-[10px] text-pink-400 mb-1 font-bold">اینستاگرام رسمی</span>
+                  <span className="font-bold text-sm text-white" dir="ltr">@floraliran</span>
+                </a>
               </div>
             </motion.div>
           </motion.div>
